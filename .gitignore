@@ -1,0 +1,13 @@
+/.*/
+node_modules 
+out
+.env
+
+components/**/*d.ts
+components/**/*.js
+components/**/*.js.map
+pages/**/*d.ts
+pages/**/*.js
+pages/**/*.js.map
+
+.debug.log
