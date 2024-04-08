@@ -48,7 +48,10 @@ export async function getStaticProps({ params }) {
   const itemId = await tryFindItemId(asPath);
   const timestamp = await tryGetTimestamp(asPath);
   const props = await getNextPageProps({ asPath, itemId, timestamp });
-  return { props: props };
+  return { 
+    props: props,
+    revalidate: 60
+   };
 }
 
 //PREVIEW MODE
