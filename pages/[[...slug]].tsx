@@ -30,7 +30,7 @@ export async function getStaticPaths() {
     // specify all static paths and let nextjs handle 404
     return {
       paths: await getStaticPaths(),
-      fallback: "true",
+      fallback: true,
     };
   } else {
     // If we are running the site in dynamic preview then
