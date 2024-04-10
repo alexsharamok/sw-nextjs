@@ -69,10 +69,9 @@ export async function getStaticProps({ params }) {
   }
   if (map) {
     if (!Object.getOwnPropertyNames(map).includes(asPath)) {
-      return {};
+      return { notFound: true, };
     } 
-  }
-  console.log(asPath);
+  }  
 
   return { 
     props: props,
